@@ -2,6 +2,7 @@
 
 :root {
   --clr-900: #140c1c;
+  --clr-850: #0e0714;
   --clr-800: #0f0715;
   --clr-750: #050709;
   --clr-700: #2a1454;
@@ -71,6 +72,11 @@ ul {
   width: fit-content;
   padding-inline: 15px;
 }
+
+section > h2 {
+  margin-inline: auto;
+}
+
 
 .container {
   padding-inline: 15px;

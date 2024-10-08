@@ -258,10 +258,6 @@ header .hire-me {
   bottom: 0;
 }
 
-.services h2 {
-  margin-inline: auto;
-}
-
 .services > p {
   color: var(--clr-500);
   font-size: 18px;
@@ -269,7 +265,6 @@ header .hire-me {
   text-align: center;
   margin-bottom: 30px;
   padding-inline: 15px;
-
 }
 
 .services .container {
@@ -344,3 +339,105 @@ header .hire-me {
 }
 
 /* End Services Section */
+
+/* Start Works Section */
+.works {
+  padding-block: 50px;
+  background-color: var(--clr-850);
+}
+
+.works .work-filter {
+  padding: 10px 20px;
+  margin: 50px auto;
+  width: fit-content;
+  background-color: var(--clr-750);
+  border-radius: 50px;
+
+  text-align: center;
+}
+
+.works .work-filter button {
+  color: white;
+  background-color: transparent;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.works .work-filter button.active {
+  background-image: var(--main-gradient);
+}
+
+.works .projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.works .projects .all {
+  position: relative;
+  padding: 30px;
+  padding-bottom: 0;
+  border-radius: 10px;
+  background: #140c1c;
+  overflow: hidden;
+}
+
+.works .projects .all img {
+  max-width: 100%;
+}
+
+.works .projects .all .fly-info {
+  position: absolute;
+  background-image: var(--main-gradient);
+  padding: 20px 15px;
+  bottom: 20px;
+  left: 15px;
+
+  width: calc(100% - 30px);
+  border-radius: 10px;
+  color: var(--clr-500);
+  opacity: 0;
+  transition: var(--main-duration);
+}
+
+.works .projects .all:hover .fly-info {
+  opacity: 1;
+  bottom: 25px;
+}
+
+.works .projects .fly-info h3 {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.works .projects .fly-info p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 18px;
+}
+
+.works .projects .fly-info i {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  transform: rotate(-45deg);
+  font-size: 25px;
+  transition: transform var(--main-duration) 0.1s;
+}
+
+.works .projects .all:hover .fly-info i {
+  transform: rotate(305deg);
+}
+
+@media (max-width: 991px) {
+  .works .projects {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* End Works Section */
