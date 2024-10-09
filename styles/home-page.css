@@ -346,6 +346,23 @@ header .hire-me {
   background-color: var(--clr-850);
 }
 
+.works .container {
+  position: relative;
+}
+
+
+.works .container::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-image: var(--glow);
+  filter: blur(150px);
+  right: 50%;
+  bottom: 50%;
+  transform: translate(0,50%);
+}
+
 .works .work-filter {
   padding: 10px 20px;
   margin: 50px auto;
@@ -441,3 +458,182 @@ header .hire-me {
 }
 
 /* End Works Section */
+
+/* Start Resume section */
+
+.resume {
+  position: relative;
+  padding-block: 50px;
+  background-color: var(--clr-750);
+  color: var(--clr-500);
+}
+
+.resume::before,
+.resume::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-image: var(--glow);
+  filter: blur(150px);
+}
+
+.resume::before {
+  right: 0;
+  bottom: 0%;
+}
+
+.resume::after {
+  left: 0%;
+  top: 0;
+}
+
+.resume h2 {
+  font-size: 50px;
+}
+
+.resume .road {
+  margin-top: 30px;
+}
+
+.resume .step {
+  background: #140c1c;
+  padding: 20px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.resume .step:hover {
+  background: var(--clr-600);
+}
+
+.resume .step:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.resume h3 {
+  font-size: 30px;
+  margin-block: 5px;
+}
+
+.resume span:first-of-type {
+  color: var(--clr-600);
+  font-weight: 500;
+  font-size: 20px;
+  transition: color 0.5s;
+}
+
+.resume .step:hover span {
+  color: var(--clr-500);
+}
+
+@media (min-width: 1200px) {
+  .resume .container > div {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1199px) {
+  .resume .container {
+    flex-wrap: wrap;
+  }
+
+  .resume .container > div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .resume h2 {
+    font-size: 30px;
+  }
+}
+
+/* End Resume section */
+
+/* Start Skills section*/
+.skills {
+  position: relative;
+  padding-block: 50px;
+  background-color: var(--clr-850);
+}
+
+.skills > p {
+  color: var(--clr-500);
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  margin-bottom: 30px;
+  padding-inline: 15px;
+}
+
+.skills .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 50px 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.skills .skill {
+  background-color: #140c1c;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 200px;
+  transition: var(--main-duration);
+}
+
+.skills .skill:hover {
+  box-shadow: 0 0 20px 6px #8850f738;
+}
+
+.skills .skill i {
+  font-size: 100px;
+}
+
+.skills .skill i.fa-html5 {
+  color: #e34c26c9;
+}
+
+.skills .skill i.fa-css3-alt {
+  color: #264de4
+  ;
+}
+
+.skills .skill i.fa-js {
+  color: #F0DB4F
+}
+
+.skills .skill i.fa-react {
+  color: #61DBFB
+}
+
+.skills .skill i.fa-figma {
+  color: #a259ff
+}
+
+.skills .skill i.fa-sass {
+  color: #cc6699
+
+}
+
+.skills .skill i.fa-git-alt {
+  color: #F1502F
+}
+.skills .skill i.fa-github {
+  color: 	#000000
+}
+
+
+.skills .skill span {
+  position: absolute;
+  bottom: -30px;
+  color: var(--clr-600);
+  font-size: 20px;
+}
+
+/* End Skills section*/
