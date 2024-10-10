@@ -258,15 +258,6 @@ header .hire-me {
   bottom: 0;
 }
 
-.services > p {
-  color: var(--clr-500);
-  font-size: 18px;
-  line-height: 25px;
-  text-align: center;
-  margin-bottom: 30px;
-  padding-inline: 15px;
-}
-
 .services .container {
   position: relative;
   overflow: hidden;
@@ -350,7 +341,6 @@ header .hire-me {
   position: relative;
 }
 
-
 .works .container::before {
   content: "";
   position: absolute;
@@ -360,7 +350,7 @@ header .hire-me {
   filter: blur(150px);
   right: 50%;
   bottom: 50%;
-  transform: translate(0,50%);
+  transform: translate(0, 50%);
 }
 
 .works .work-filter {
@@ -558,15 +548,6 @@ header .hire-me {
   background-color: var(--clr-850);
 }
 
-.skills > p {
-  color: var(--clr-500);
-  font-size: 18px;
-  line-height: 25px;
-  text-align: center;
-  margin-bottom: 30px;
-  padding-inline: 15px;
-}
-
 .skills .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -600,34 +581,31 @@ header .hire-me {
 }
 
 .skills .skill i.fa-css3-alt {
-  color: #264de4
-  ;
+  color: #264de4;
 }
 
 .skills .skill i.fa-js {
-  color: #F0DB4F
+  color: #f0db4f;
 }
 
 .skills .skill i.fa-react {
-  color: #61DBFB
+  color: #61dbfb;
 }
 
 .skills .skill i.fa-figma {
-  color: #a259ff
+  color: #a259ff;
 }
 
 .skills .skill i.fa-sass {
-  color: #cc6699
-
+  color: #cc6699;
 }
 
 .skills .skill i.fa-git-alt {
-  color: #F1502F
+  color: #f1502f;
 }
 .skills .skill i.fa-github {
-  color: 	#000000
+  color: #000000;
 }
-
 
 .skills .skill span {
   position: absolute;
@@ -637,3 +615,227 @@ header .hire-me {
 }
 
 /* End Skills section*/
+
+/*  Start Blogs Section */
+.blogs {
+  padding-block: 50px;
+  background-color: var(--clr-750);
+}
+
+.blogs .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.blogs .blog {
+  position: relative;
+  height: 320px;
+  background-color: #140c1c;
+}
+
+.blogs .blog img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.blogs .blog .category {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-image: var(--main-gradient);
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: var(--clr-500);
+}
+
+.blogs .blog .blog-info {
+  position: absolute;
+  background-color: #2b1454;
+  color: var(--clr-500);
+  padding: 20px;
+  width: calc(100% - 30px);
+  bottom: 20px;
+  left: 15px;
+  border-radius: 20px;
+}
+
+.blogs .blog .blog-info span {
+  color: var(--clr-600);
+}
+
+.blogs .blog .blog-info h3 {
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+@media (max-width: 767px) {
+  .blogs .container {
+    grid-template-columns: 1fr;
+  }
+}
+/*  End Blogs Section */
+
+/* Start Contact Section */
+.contact {
+  padding-block: 50px;
+  background-color: var(--clr-850);
+  color: var(--clr-500);
+}
+
+.contact form {
+  background-color: var(--clr-750);
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.contact h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.contact form .row {
+  margin-bottom: 20px;
+}
+
+.contact form .row * {
+  width: 100%;
+  font-size: 17px;
+  border-radius: 6px;
+}
+
+.contact form .row:has(input) input {
+  padding-left: 10px;
+  border: none;
+}
+
+.contact form .row:has(input, select) * {
+  height: 40px;
+}
+
+.contact form .row textarea {
+  min-height: 200px;
+  padding: 10px;
+}
+
+.contact input[type="submit"] {
+  background-image: var(--main-gradient);
+  width: 150px;
+  height: 50px;
+  border-radius: 30px;
+  color: white;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.contact .side-info .row i {
+  color: var(--clr-500);
+  background: var(--main-gradient);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.contact .side-info .row span:last-of-type {
+  font-size: 18px;
+  transition: var(--main-duration);
+}
+
+.contact .side-info .row span:last-of-type:hover {
+  color: var(--clr-600);
+}
+
+.contact .side-info .row:not(:last-of-type) {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 991px) {
+  .contact .container {
+    flex-direction: column-reverse;
+  }
+
+  .contact form {
+    width: 100%;
+  }
+
+  .contact form .row:has(input) {
+    flex-wrap: wrap;
+  }
+
+  .contact input[type="submit"] {
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 430px) {
+  .contact h2 {
+    font-size: 28px;
+  }
+
+  .contact p {
+    font-size: 16px;
+  }
+
+  .contact .side-info .row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* End Contact Section */
+
+/* Start footer */
+footer {
+  padding-block: 50px 30px;
+  background-color: var(--clr-750);
+}
+
+footer .container {
+  flex-direction: column;
+  color: var(--clr-600);
+}
+
+footer img {
+  width: 80px;
+}
+
+footer ul {
+  flex-wrap: wrap;
+}
+
+footer ul a {
+  position: relative;
+  color: var(--clr-500);
+  font-weight: 500;
+  font-size: 18px;
+}
+
+footer ul a::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  left: 0;
+  bottom: -3px;
+  background-color: var(--clr-600);
+  transition: var(--main-duration);
+}
+
+footer ul a:hover::before {
+  width: 100%;
+}
+
+footer p {
+  text-align: center;
+}
+/* End footer */
