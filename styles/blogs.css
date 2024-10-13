@@ -1,0 +1,260 @@
+.page-title {
+  background-color: var(--clr-800);
+}
+
+.page-title h1 {
+  margin: 0;
+  font-size: 100px;
+  margin-inline: auto;
+}
+
+.blogs {
+  background-color: var(--clr-750);
+  padding-block: 50px;
+}
+
+.blogs .blogs-place .blog {
+  margin-bottom: 30px;
+  background-color: var(--clr-850);
+  color: var(--clr-500);
+  border-radius: 10px;
+  position: relative;
+}
+
+.blogs .blogs-place .blog .blog-category {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: var(--main-gradient);
+  padding: 7px 15px;
+  border-radius: 30px;
+  color: white;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.blogs .blogs-place .blog .blog-img {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.blogs .blogs-place .blog img {
+  width: 100%;
+  transition: var(--main-duration);
+}
+
+.blogs .blogs-place .blog img:hover {
+  transform: scale(1.1);
+}
+
+.blogs .blogs-place .blog .blog-info {
+  padding: 30px;
+}
+
+.blogs .blogs-place .blog h2 {
+  font-size: 32px;
+  margin-block: 20px;
+}
+
+.blogs .blogs-place .blog p {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.blogs .blogs-place .blog span:first-of-type {
+  margin-right: 20px;
+}
+
+.blogs .blogs-place .blog i {
+  color: var(--clr-600);
+  margin-right: 5px;
+}
+
+.blogs .blogs-place .blog a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: var(--main-gradient);
+  width: 150px;
+  height: 50px;
+  border-radius: 30px;
+  color: white;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.blogs .blogs-place .blogs-pages {
+  display: flex;
+  gap: 20px;
+  padding-block: 30px;
+}
+
+.blogs .blogs-place .blogs-pages a {
+  color: var(--clr-500);
+  font-size: 20px;
+  transition: var(--main-duration);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.blogs .blogs-place .blogs-pages a.active {
+  background-color: var(--clr-600);
+}
+
+.blogs .blogs-place .blogs-pages a:first-of-type {
+  display: none
+}
+
+.blogs .blogs-place .blogs-pages a:hover {
+  background-color: var(--clr-600);
+}
+
+.blogs aside h3 {
+  color: var(--clr-500);
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.search,
+.categories,
+.recent-post,
+.popular-tag {
+  background-color: var(--clr-850);
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+
+}
+
+.blogs aside .blog {
+  margin-bottom: 20px;
+}
+
+.blogs aside .search input {
+  width: 80%;
+  padding-left: 10px;
+  font-size: 18px;
+  background-color: var(--clr-750);
+  color: white;
+  border: 1px solid #22272c;
+  outline: none;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.blogs aside .search button {
+  font-size: 20px;
+  border: none;
+  background-color: var(--clr-600);
+  outline: none;
+  cursor: pointer;
+  height: 60px;
+  width: 20%;
+  color: white;
+  font-size: 30px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.blogs aside .categories ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.blogs aside .categories ul li {
+  display: inline-flex ;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blogs aside .categories ul li a {
+  color: var(--clr-500);
+  font-weight: 500;
+}
+
+.blogs aside .categories ul li span {
+  color: var(--clr-600);
+}
+
+.blogs aside .recent-post a {
+  font-size: 20px;
+  color: var(--clr-500);
+}
+
+.blogs aside .recent-post img {
+  width: 100px;
+  aspect-ratio: 16 / 9;
+}
+
+.blogs aside .recent-post span {
+  font-size: 16px;
+}
+
+.blogs aside .recent-post i {
+  color: var(--clr-600);
+  margin-right: 10px;
+}
+
+.blogs aside .recent-post h4 {
+  margin-top: 15px;
+}
+
+.blogs aside .popular-tag a {
+  display: inline-block;
+  background-image: var(--main-gradient);
+  padding: 7px 15px;
+  border-radius: 30px;
+  color: white;
+  font-weight: 500;
+}
+
+.blogs aside .popular-tag a {
+  margin-bottom: 10px;
+}
+
+.blogs aside .popular-tag a:not(:first-of-type) {
+  margin-left: 10px;
+}
+
+
+@media (min-width: 992px) {
+  .blogs .container {
+    display: flex;
+    gap: 30px;
+  }
+
+  .blogs .container .blogs-place {
+    width: calc(100% - 350px);
+  }
+
+  .blogs .container aside {
+    width: 350px;
+  }
+}
+
+@media (max-width: 430px) {
+  .blogs .blogs-place .blog h2 {
+    font-size: 25px;
+  }
+
+  .blogs .blogs-place .blog p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 418px) {
+  .blogs .blogs-place .blog p:has(span) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

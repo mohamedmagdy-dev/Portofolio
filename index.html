@@ -3,6 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Meta description for search engines -->
+    <meta
+      name="description"
+      content="Welcome to the personal portfolio of Mohamed Magdy Elsayed, a passionate Frontend Developer. Explore my projects, skills, and experiences in web development."
+    />
+
+    <!-- Meta author with your name -->
+    <meta name="author" content="Mohamed Magdy Elsayed" />
+
+    <!-- Meta keywords to improve SEO -->
+    <meta
+      name="keywords"
+      content="Frontend Developer, Mohamed Magdy Elsayed, Web Developer, HTML, CSS, JavaScript, Portfolio, Frontend, محمد مجدي السيد"
+    />
+
     <link rel="stylesheet" href="styles/normailze.css" />
     <link rel="stylesheet" href="styles/all.min.css" />
     <link rel="stylesheet" href="styles/home-page.css" />
@@ -22,461 +37,451 @@
             <li><a href="#works">works</a></li>
             <li><a href="#resume">resume</a></li>
             <li><a href="#skills">skills</a></li>
-            <li><a href="#blogs">blogs</a></li>
+            <li><a href="pages/blogs.html">blogs</a></li>
             <li><a href="#contact">contact</a></li>
           </ul>
-          <a href="#" class="hire-me hire-me-mobile hide-me">hire me!</a>
+          <a
+            href="mailto:mohamedmagdyelsayed7@gmail.com"
+            class="hire-me hire-me-mobile hide-me"
+            >hire me!</a
+          >
         </nav>
         <button class="hide-me mobile-menu">
           <i class="fa-solid fa-bars"></i>
         </button>
-        <a href="#" class="hire-me df-ac">hire me!</a>
+        <a href="mailto:mohamedmagdyelsayed7@gmail.com" class="hire-me df-ac"
+          >hire me!</a
+        >
       </div>
     </header>
     <!-- End Header  -->
-    <main>
-      <!-- Start Landing Section -->
-      <section class="landing">
-        <div class="container gap-50 df f-v">
-          <div class="info">
-            <span class="clr-500">I am Mohamed</span>
-            <h1 class="main-title">FrontEnd Developer</h1>
-            <div class="personal-img hide-me personal-img-mobile">
-              <img src="assets/images/personal-img.jpg" alt="personal-img" />
-            </div>
-            <p class="clr-500">
-              I love translating complex design concepts into clean, responsive
-              and efficient code, and creating smooth, easy-to-use web
-              interfaces that prioritize both performance and aesthetics.
-            </p>
-            <div class="controls df gap-20 f-v">
-              <a
-                href="assets/resume/resume-mohamed-magdy-elsayed.pdf"
-                download
-                target="_blank"
-                class="df-ac gap-10"
-                >download resume
-                <i class="fa-solid fa-download"></i>
-              </a>
-              <div class="social df gap-20">
-                <a
-                  href="https://www.linkedin.com/in/mohamedmagdy-dev/"
-                  target="_blank"
-                  class="df-ac"
-                  ><i class="fa-brands fa-linkedin"></i
-                ></a>
-                <a
-                  href="https://web.facebook.com/profile.php?id=100076058659673"
-                  target="_blank"
-                  class="df-ac"
-                  ><i class="fa-brands fa-facebook"></i
-                ></a>
-                <a
-                  href="https://github.com/mohamedmagdy-dev"
-                  class="df-ac"
-                  target="_blank"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="personal-img">
+    <!-- Start Landing Section -->
+    <section class="landing">
+      <div class="container gap-50 df f-v">
+        <div class="info">
+          <span class="clr-500">I am Mohamed</span>
+          <h1 class="main-title">FrontEnd Developer</h1>
+          <div class="personal-img hide-me personal-img-mobile">
             <img src="assets/images/personal-img.jpg" alt="personal-img" />
           </div>
-        </div>
-      </section>
-      <!-- End Landing Section -->
-
-      <!-- Start Services Section -->
-      <section id="services" class="services">
-        <h2 class="main-title">My Quality Services</h2>
-        <p>
-          We put your ideas and thus your wishes in the form of a unique web
-          project that <br />
-          inspires you and you customers.
-        </p>
-        <div class="container">
-          <div class="service one">
-            <h3><span>01.</span> Frontend Development</h3>
-            <p>
-              Creating dynamic and responsive websites using HTML, CSS, and
-              JavaScript. Ensuring cross-browser compatibility, performance
-              optimization, and smooth user experiences across all devices.
-            </p>
-          </div>
-          <div class="service two">
-            <h3><span>02.</span> UI/UX Implementation</h3>
-            <p>
-              Turning design prototypes into fully functional and interactive
-              interfaces. Focused on delivering responsive layouts, intuitive
-              interactions, and optimized user experiences for mobile and web.
-            </p>
-          </div>
-          <div class="service three">
-            <h3><span>03.</span> Web Performance Optimization</h3>
-            <p>
-              Boosting website speed and performance through code optimization,
-              lazy loading, and asset management. Ensuring quick load times,
-              efficient navigation, and smooth interactions for all users.
-            </p>
-          </div>
-          <div class="service four">
-            <h3><span>04.</span> JavaScript Frameworks</h3>
-            <p>
-              Utilizing modern JavaScript frameworks like React and Vue.js to
-              build scalable frontend applications. Creating reusable
-              components, managing state efficiently, and ensuring maintainable
-              codebases.
-            </p>
-          </div>
-          <div class="service-slider"></div>
-        </div>
-      </section>
-      <!-- End Services Section -->
-
-      <!-- Start Works Section -->
-      <section class="works" id="works">
-        <h2 class="main-title">My Recent Works</h2>
-        <div class="container">
-          <div class="work-filter">
-            <button class="active">All</button>
-            <button class="html-css">Html & Css</button>
-            <button class="v-js">Vanilla JavaScript</button>
-            <button class="react">React</button>
-          </div>
-          <div class="projects">
-            <div class="all">
-              <img src="assets/images/portfolio-3-1024x877.jpg" alt="" />
-              <a href="#">
-                <div class="fly-info">
-                  <h3>dashboard elzero</h3>
-                  <p>The goal is there are many variations of passages .</p>
-                  <i class="fa-solid fa-arrow-right"></i>
-                </div>
-              </a>
-            </div>
-            <div class="all">
-              <img src="assets/images/portfolio-3-1024x877.jpg" alt="" />
-              <a href="#">
-                <div class="fly-info">
-                  <h3>dashboard elzero</h3>
-                  <p>
-                    The goal is there are many variations of passages of Lorem
-                    Ipsum
-                  </p>
-                  <i class="fa-solid fa-arrow-right"></i>
-                </div>
-              </a>
-            </div>
-            <div class="all">
-              <img src="assets/images/portfolio-3-1024x877.jpg" alt="" />
-              <a href="#">
-                <div class="fly-info">
-                  <h3>dashboard elzero</h3>
-                  <p>
-                    The goal is there are many variations of passages of Lorem
-                    Ipsum
-                  </p>
-                  <i class="fa-solid fa-arrow-right"></i>
-                </div>
-              </a>
-            </div>
-            <div class="all">
-              <img src="assets/images/portfolio-3-1024x877.jpg" alt="" />
-              <a href="#">
-                <div class="fly-info">
-                  <h3>dashboard elzero</h3>
-                  <p>
-                    The goal is there are many variations of passages of Lorem
-                    Ipsum
-                  </p>
-                  <i class="fa-solid fa-arrow-right"></i>
-                </div>
-              </a>
+          <p class="clr-500">
+            I love translating complex design concepts into clean, responsive
+            and efficient code, and creating smooth, easy-to-use web interfaces
+            that prioritize both performance and aesthetics.
+          </p>
+          <div class="controls df gap-20 f-v">
+            <a
+              href="assets/resume/resume-mohamed-magdy-elsayed.pdf"
+              download
+              target="_blank"
+              class="df-ac gap-10"
+              >download resume
+              <i class="fa-solid fa-download"></i>
+            </a>
+            <div class="social df gap-20">
+              <a
+                href="https://www.linkedin.com/in/mohamedmagdy-dev/"
+                target="_blank"
+                class="df-ac"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                href="https://web.facebook.com/profile.php?id=100076058659673"
+                target="_blank"
+                class="df-ac"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href="https://github.com/mohamedmagdy-dev"
+                class="df-ac"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
             </div>
           </div>
         </div>
-      </section>
-      <!-- End Works Section -->
-
-      <!-- Start resume Section-->
-      <section class="resume" id="resume">
-        <div class="container df gap-100 f-sb">
-          <div class="experience">
-            <h2 class="main-title">
-              <i class="fa-solid fa-pen-nib"></i> My Experience
-            </h2>
-            <div class="road">
-              <div class="step">
-                <span>2022 - Present</span>
-                <h3>Lead Developer</h3>
-                <span>Blockdots, London</span>
-              </div>
-              <div class="step">
-                <span>2022 - Present</span>
-                <h3>Lead Developer</h3>
-                <span>Blockdots, London</span>
-              </div>
-              <div class="step">
-                <span>2022 - Present</span>
-                <h3>Lead Developer</h3>
-                <span>Blockdots, London</span>
-              </div>
-              <div class="step">
-                <span>2022 - Present</span>
-                <h3>Lead Developer</h3>
-                <span>Blockdots, London</span>
-              </div>
-              <div class="step">
-                <span>2022 - Present</span>
-                <h3>Lead Developer</h3>
-                <span>Blockdots, London</span>
-              </div>
-              <div class="step">
-                <span>2022 - Present</span>
-                <h3>Lead Developer</h3>
-                <span>Blockdots, London</span>
-              </div>
-            </div>
-          </div>
-          <div class="education">
-            <h2 class="main-title">
-              <i class="fa-solid fa-school"></i> My Education
-            </h2>
-            <div class="road">
-              <div class="step">
-                <span>2020 - 2023</span>
-                <h3>Programming course</h3>
-                <span>Harverd University </span>
-              </div>
-              <div class="step">
-                <span>2020 - 2023</span>
-                <h3>Programming course</h3>
-                <span>Harverd University </span>
-              </div>
-              <div class="step">
-                <span>2020 - 2023</span>
-                <h3>Programming course</h3>
-                <span>Harverd University </span>
-              </div>
-              <div class="step">
-                <span>2020 - 2023</span>
-                <h3>Programming course</h3>
-                <span>Harverd University </span>
-              </div>
-              <div class="step">
-                <span>2020 - 2023</span>
-                <h3>Programming course</h3>
-                <span>Harverd University </span>
-              </div>
-              <div class="step">
-                <span>2020 - 2023</span>
-                <h3>Programming course</h3>
-                <span>Harverd University </span>
-              </div>
-            </div>
-          </div>
+        <div class="personal-img">
+          <img src="assets/images/personal-img.jpg" alt="personal-img" />
         </div>
-      </section>
-      <!-- End resume Section-->
+      </div>
+    </section>
+    <!-- End Landing Section -->
 
-      <!-- Start Skills section -->
-      <section class="skills" id="skills">
-        <h2 class="main-title">My Skills</h2>
-        <p>
-          We put your ideas and thus your wishes in the form of a unique web
-          project that <br />
-          inspires you and you customers.
-        </p>
-        <div class="container">
-          <div class="skill">
-            <i class="fa-brands fa-html5"></i>
-            <span>Html</span>
-          </div>
-          <div class="skill">
-            <i class="fa-brands fa-css3-alt"></i>
-            <span>Css</span>
-          </div>
-          <div class="skill">
-            <i class="fa-brands fa-js"></i>
-            <span>JavaScript</span>
-          </div>
-          <div class="skill">
-            <i class="fa-brands fa-react"></i>
-            <span>React</span>
-          </div>
-          <div class="skill">
-            <i class="fa-brands fa-figma"></i>
-            <span>Figma</span>
-          </div>
-          <div class="skill">
-            <i class="fa-brands fa-sass"></i>
-            <span>Sass</span>
-          </div>
-          <div class="skill">
-            <i class="fa-brands fa-git-alt"></i>
-            <span>Git</span>
-          </div>
-          <div class="skill">
-            <i class="fa-brands fa-github"></i>
-            <span>Github</span>
-          </div>
+    <!-- Start Services Section -->
+    <section id="services" class="services">
+      <h2 class="main-title">My Quality Services</h2>
+      <p>
+        We put your ideas and thus your wishes in the form of a unique web
+        project that <br />
+        inspires you and you customers.
+      </p>
+      <div class="container">
+        <div class="service one">
+          <h3><span>01.</span> Frontend Development</h3>
+          <p>
+            Creating dynamic and responsive websites using HTML, CSS, and
+            JavaScript. Ensuring cross-browser compatibility, performance
+            optimization, and smooth user experiences across all devices.
+          </p>
         </div>
-      </section>
-      <!-- End Skills section -->
+        <div class="service two">
+          <h3><span>02.</span> UI/UX Implementation</h3>
+          <p>
+            Turning design prototypes into fully functional and interactive
+            interfaces. Focused on delivering responsive layouts, intuitive
+            interactions, and optimized user experiences for mobile and web.
+          </p>
+        </div>
+        <div class="service three">
+          <h3><span>03.</span> Web Performance Optimization</h3>
+          <p>
+            Boosting website speed and performance through code optimization,
+            lazy loading, and asset management. Ensuring quick load times,
+            efficient navigation, and smooth interactions for all users.
+          </p>
+        </div>
+        <div class="service four">
+          <h3><span>04.</span> JavaScript Frameworks</h3>
+          <p>
+            Utilizing modern JavaScript frameworks like React and Vue.js to
+            build scalable frontend applications. Creating reusable components,
+            managing state efficiently, and ensuring maintainable codebases.
+          </p>
+        </div>
+        <div class="service-slider"></div>
+      </div>
+    </section>
+    <!-- End Services Section -->
 
-      <!-- Start Blogs Section -->
-      <section class="blogs" id="blogs">
-        <h2 class="main-title">Recent Blogs</h2>
-        <p>
-          We put your ideas and thus your wishes in the form of a unique web
-          project that <br />
-          inspires you and you customers.
-        </p>
-        <div class="container">
-          <div class="blog">
+    <!-- Start Works Section -->
+    <section class="works" id="works">
+      <h2 class="main-title">My Recent Works</h2>
+      <div class="container">
+        <div class="work-filter">
+          <button class="active">All</button>
+          <button class="html-css">Html & Css</button>
+          <button class="v-js">Vanilla JavaScript</button>
+          <button class="react">React</button>
+        </div>
+        <div class="projects">
+          <div class="all">
+            <img src="assets/images/portfolio-3-1024x877.jpg" alt="" />
             <a href="#">
-              <img src="assets/images/blog-4-1536x597.jpg" alt="blog1" />
-              <span class="category">sass</span>
-              <div class="blog-info">
-                <div class="df gap-20">
-                  <span
-                    ><i class="fa-solid fa-calendar-days"></i> May 10,
-                    2024</span
-                  >
-                  <span
-                    ><i class="fa-brands fa-rocketchat"></i> No Comments</span
-                  >
-                </div>
-                <h3>The services provide for design</h3>
+              <div class="fly-info">
+                <h3>dashboard elzero</h3>
+                <p>The goal is there are many variations of passages .</p>
+                <i class="fa-solid fa-arrow-right"></i>
               </div>
             </a>
           </div>
-          <div class="blog">
+          <div class="all">
+            <img src="assets/images/portfolio-3-1024x877.jpg" alt="" />
             <a href="#">
-              <img src="assets/images/blog-4-1536x597.jpg" alt="blog1" />
-              <span class="category">sass</span>
-              <div class="blog-info">
-                <div class="df gap-20">
-                  <span
-                    ><i class="fa-solid fa-calendar-days"></i> May 10,
-                    2024</span
-                  >
-                  <span
-                    ><i class="fa-brands fa-rocketchat"></i> No Comments</span
-                  >
-                </div>
-                <h3>The services provide for design</h3>
+              <div class="fly-info">
+                <h3>dashboard elzero</h3>
+                <p>
+                  The goal is there are many variations of passages of Lorem
+                  Ipsum
+                </p>
+                <i class="fa-solid fa-arrow-right"></i>
               </div>
             </a>
           </div>
-          <div class="blog">
+          <div class="all">
+            <img src="assets/images/portfolio-3-1024x877.jpg" alt="" />
             <a href="#">
-              <img src="assets/images/blog-4-1536x597.jpg" alt="blog1" />
-              <span class="category">sass</span>
-              <div class="blog-info">
-                <div class="df gap-20">
-                  <span
-                    ><i class="fa-solid fa-calendar-days"></i> May 10,
-                    2024</span
-                  >
-                  <span
-                    ><i class="fa-brands fa-rocketchat"></i> No Comments</span
-                  >
-                </div>
-                <h3>The services provide for design</h3>
+              <div class="fly-info">
+                <h3>dashboard elzero</h3>
+                <p>
+                  The goal is there are many variations of passages of Lorem
+                  Ipsum
+                </p>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </a>
+          </div>
+          <div class="all">
+            <img src="assets/images/portfolio-3-1024x877.jpg" alt="" />
+            <a href="#">
+              <div class="fly-info">
+                <h3>dashboard elzero</h3>
+                <p>
+                  The goal is there are many variations of passages of Lorem
+                  Ipsum
+                </p>
+                <i class="fa-solid fa-arrow-right"></i>
               </div>
             </a>
           </div>
         </div>
-      </section>
-      <!-- End Blogs Section -->
+      </div>
+    </section>
+    <!-- End Works Section -->
 
-      <!-- Start Contact Section -->
-      <section class="contact">
-        <div class="container df gap-50 f-v">
-          <form action="">
-            <h2 class="main-title">Let’s work together!</h2>
-            <p>
-              I design and code beautifully simple things and i love what i do.
-              Just <br />
-              simple like that!
-            </p>
-            <div class="row df gap-20">
-              <input type="text" name="first-name" placeholder="First name" />
-              <input type="text" name="last-name" placeholder="Last name" />
+    <!-- Start resume Section-->
+    <section class="resume" id="resume">
+      <div class="container df gap-100 f-sb">
+        <div class="experience">
+          <h2 class="main-title">
+            <i class="fa-solid fa-pen-nib"></i> My Experience
+          </h2>
+          <div class="road">
+            <div class="step">
+              <span>2022 - Present</span>
+              <h3>Lead Developer</h3>
+              <span>Blockdots, London</span>
             </div>
-            <div class="row df gap-20">
-              <input
-                type="text"
-                name="email-address"
-                placeholder="Email address"
-              />
-              <input
-                type="text"
-                name="phone-number"
-                placeholder="Phone number"
-              />
+            <div class="step">
+              <span>2022 - Present</span>
+              <h3>Lead Developer</h3>
+              <span>Blockdots, London</span>
             </div>
-            <div class="row">
-              <select name="work-type">
-                <option value="unselect">--Please choose an option--</option>
-                <option value="website">Website</option>
-                <option value="modify-site">Modify Site</option>
-                <option value="add-feature">Add Feature</option>
-              </select>
+            <div class="step">
+              <span>2022 - Present</span>
+              <h3>Lead Developer</h3>
+              <span>Blockdots, London</span>
             </div>
-            <div class="row">
-              <textarea name="message" placeholder="Message..."></textarea>
+            <div class="step">
+              <span>2022 - Present</span>
+              <h3>Lead Developer</h3>
+              <span>Blockdots, London</span>
             </div>
-            <input type="submit" value="Send Message" />
-          </form>
-          <div class="side-info">
-            <div class="row df gap-20">
-              <i class="fa-solid fa-phone df-ac"></i>
-              <div class="info">
-                <span>Phone</span> <br />
-                <span>+20 127 512 9950</span>
-              </div>
+            <div class="step">
+              <span>2022 - Present</span>
+              <h3>Lead Developer</h3>
+              <span>Blockdots, London</span>
             </div>
-            <div class="row df gap-20">
-              <i class="fa-solid fa-envelope df-ac"></i>
-              <div class="info">
-                <span>Email</span> <br />
-                <span>mohamedmagdyelsayed7@gmail.com </span>
-              </div>
-            </div>
-            <div class="row df gap-20">
-              <i class="fa-solid fa-envelope df-ac"></i>
-              <div class="info">
-                <span>Address</span> <br />
-                <span>Warne Park Street Pine, FL 33157, New York</span>
-              </div>
+            <div class="step">
+              <span>2022 - Present</span>
+              <h3>Lead Developer</h3>
+              <span>Blockdots, London</span>
             </div>
           </div>
         </div>
-      </section>
-      <!-- End Contact Section -->
-
-      <!-- Start Footer -->
-      <footer>
-        <div class="container df f-v gap-20">
-          <img src="assets/images/logo.png" alt="logo.png" />
-          <nav>
-            <ul class="df gap-20 f-h">
-              <li><a href="#services">services</a></li>
-              <li><a href="#works">works</a></li>
-              <li><a href="#resume">resume</a></li>
-              <li><a href="#skills">skills</a></li>
-              <li><a href="#blogs">blogs</a></li>
-              <li><a href="#contact">contact</a></li>
-            </ul>
-          </nav>
-          <p>© 2024 All Rights Reserved by Mohamed Magdy (:</p>
+        <div class="education">
+          <h2 class="main-title">
+            <i class="fa-solid fa-school"></i> My Education
+          </h2>
+          <div class="road">
+            <div class="step">
+              <span>2020 - 2023</span>
+              <h3>Programming course</h3>
+              <span>Harverd University </span>
+            </div>
+            <div class="step">
+              <span>2020 - 2023</span>
+              <h3>Programming course</h3>
+              <span>Harverd University </span>
+            </div>
+            <div class="step">
+              <span>2020 - 2023</span>
+              <h3>Programming course</h3>
+              <span>Harverd University </span>
+            </div>
+            <div class="step">
+              <span>2020 - 2023</span>
+              <h3>Programming course</h3>
+              <span>Harverd University </span>
+            </div>
+            <div class="step">
+              <span>2020 - 2023</span>
+              <h3>Programming course</h3>
+              <span>Harverd University </span>
+            </div>
+            <div class="step">
+              <span>2020 - 2023</span>
+              <h3>Programming course</h3>
+              <span>Harverd University </span>
+            </div>
+          </div>
         </div>
-      </footer>
-      <!-- End Footer -->
-    </main>
+      </div>
+    </section>
+    <!-- End resume Section-->
+
+    <!-- Start Skills section -->
+    <section class="skills" id="skills">
+      <h2 class="main-title">My Skills</h2>
+      <p>
+        We put your ideas and thus your wishes in the form of a unique web
+        project that <br />
+        inspires you and you customers.
+      </p>
+      <div class="container">
+        <div class="skill">
+          <i class="fa-brands fa-html5"></i>
+          <span>Html</span>
+        </div>
+        <div class="skill">
+          <i class="fa-brands fa-css3-alt"></i>
+          <span>Css</span>
+        </div>
+        <div class="skill">
+          <i class="fa-brands fa-js"></i>
+          <span>JavaScript</span>
+        </div>
+        <div class="skill">
+          <i class="fa-brands fa-react"></i>
+          <span>React</span>
+        </div>
+        <div class="skill">
+          <i class="fa-brands fa-figma"></i>
+          <span>Figma</span>
+        </div>
+        <div class="skill">
+          <i class="fa-brands fa-sass"></i>
+          <span>Sass</span>
+        </div>
+        <div class="skill">
+          <i class="fa-brands fa-git-alt"></i>
+          <span>Git</span>
+        </div>
+        <div class="skill">
+          <i class="fa-brands fa-github"></i>
+          <span>Github</span>
+        </div>
+      </div>
+    </section>
+    <!-- End Skills section -->
+
+    <!-- Start Blogs Section -->
+    <section class="blogs">
+      <h2 class="main-title">Recent Blogs</h2>
+      <p>
+        We put your ideas and thus your wishes in the form of a unique web
+        project that <br />
+        inspires you and you customers.
+      </p>
+      <div class="container">
+        <div class="blog">
+          <a href="#">
+            <img src="assets/images/blog-4-1536x597.jpg" alt="blog1" />
+            <span class="category">sass</span>
+            <div class="blog-info">
+              <div class="df gap-20">
+                <span
+                  ><i class="fa-solid fa-calendar-days"></i> May 10, 2024</span
+                >
+                <span><i class="fa-brands fa-rocketchat"></i> No Comments</span>
+              </div>
+              <h3>The services provide for design</h3>
+            </div>
+          </a>
+        </div>
+        <div class="blog">
+          <a href="#">
+            <img src="assets/images/blog-4-1536x597.jpg" alt="blog1" />
+            <span class="category">sass</span>
+            <div class="blog-info">
+              <div class="df gap-20">
+                <span
+                  ><i class="fa-solid fa-calendar-days"></i> May 10, 2024</span
+                >
+                <span><i class="fa-brands fa-rocketchat"></i> No Comments</span>
+              </div>
+              <h3>The services provide for design</h3>
+            </div>
+          </a>
+        </div>
+        <div class="blog">
+          <a href="#">
+            <img src="assets/images/blog-4-1536x597.jpg" alt="blog1" />
+            <span class="category">sass</span>
+            <div class="blog-info">
+              <div class="df gap-20">
+                <span
+                  ><i class="fa-solid fa-calendar-days"></i> May 10, 2024</span
+                >
+                <span><i class="fa-brands fa-rocketchat"></i> No Comments</span>
+              </div>
+              <h3>The services provide for design</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- End Blogs Section -->
+
+    <!-- Start Contact Section -->
+    <section class="contact">
+      <div class="container df gap-50 f-v">
+        <form action="">
+          <h2 class="main-title">Let’s work together!</h2>
+          <p>
+            I design and code beautifully simple things and i love what i do.
+            Just <br />
+            simple like that!
+          </p>
+          <div class="row df gap-20">
+            <input type="text" name="first-name" placeholder="First name" />
+            <input type="text" name="last-name" placeholder="Last name" />
+          </div>
+          <div class="row df gap-20">
+            <input
+              type="text"
+              name="email-address"
+              placeholder="Email address"
+            />
+            <input type="text" name="phone-number" placeholder="Phone number" />
+          </div>
+          <div class="row">
+            <select name="work-type">
+              <option value="unselect">--Please choose an option--</option>
+              <option value="website">Website</option>
+              <option value="modify-site">Modify Site</option>
+              <option value="add-feature">Add Feature</option>
+            </select>
+          </div>
+          <div class="row">
+            <textarea name="message" placeholder="Message..."></textarea>
+          </div>
+          <input type="submit" value="Send Message" />
+        </form>
+        <div class="side-info">
+          <div class="row df gap-20">
+            <i class="fa-solid fa-phone df-ac"></i>
+            <div class="info">
+              <span>Phone</span> <br />
+              <span>+20 127 512 9950</span>
+            </div>
+          </div>
+          <div class="row df gap-20">
+            <i class="fa-solid fa-envelope df-ac"></i>
+            <div class="info">
+              <span>Email</span> <br />
+              <span>mohamedmagdyelsayed7@gmail.com </span>
+            </div>
+          </div>
+          <div class="row df gap-20">
+            <i class="fa-solid fa-envelope df-ac"></i>
+            <div class="info">
+              <span>Address</span> <br />
+              <span>Warne Park Street Pine, FL 33157, New York</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+
+    <!-- Start Footer -->
+    <footer>
+      <div class="container df f-v gap-20">
+        <img src="assets/images/logo.png" alt="logo.png" />
+        <nav>
+          <ul class="df gap-20 f-h">
+            <li><a href="#services">services</a></li>
+            <li><a href="#works">works</a></li>
+            <li><a href="#resume">resume</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="pages/blogs.html">blogs</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </nav>
+        <p>© 2024 All Rights Reserved by Mohamed Magdy (:</p>
+      </div>
+    </footer>
+    <!-- End Footer -->
 
     <script src="scripts/global.js"></script>
   </body>
