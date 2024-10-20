@@ -63,6 +63,7 @@
 .blogs .blogs-place .blog p {
   font-size: 18px;
   line-height: 25px;
+  margin-block: 20px;
 }
 
 .blogs .blogs-place .blog span:first-of-type {
@@ -110,7 +111,7 @@
 }
 
 .blogs .blogs-place .blogs-pages a:first-of-type {
-  display: none
+  display: none;
 }
 
 .blogs .blogs-place .blogs-pages a:hover {
@@ -131,7 +132,6 @@
   padding: 20px;
   margin-bottom: 30px;
   border-radius: 10px;
-
 }
 
 .blogs aside .blog {
@@ -171,7 +171,7 @@
 }
 
 .blogs aside .categories ul li {
-  display: inline-flex ;
+  display: inline-flex;
   align-items: center;
   justify-content: space-between;
 }
@@ -224,7 +224,6 @@
 .blogs aside .popular-tag a:not(:first-of-type) {
   margin-left: 10px;
 }
-
 
 @media (min-width: 992px) {
   .blogs .container {

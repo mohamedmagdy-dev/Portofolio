@@ -1,0 +1,38 @@
+.article-data {
+  background-color: var(--clr-700);
+}
+
+.article-data .container {
+  padding-block: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font-size: 18px;
+}
+
+.article-data .container > * {
+  color: var(--clr-500);
+  background-color: var(--clr-850);
+}
+
+.article-data .container input {
+  height: 40px;
+  border: 2px solid var(--clr-600);
+  padding: 10px;
+}
+
+.article-data .container input[type="file"] {
+  height: 50px;
+}
+
+.article-data .container textarea {
+  padding: 10px;
+  min-height: 200px;
+}
+
+.article-data .container input[type="submit"] {
+  height: 50px;
+  width: fit-content;
+  margin-inline: auto;
+  cursor: pointer;
+}
