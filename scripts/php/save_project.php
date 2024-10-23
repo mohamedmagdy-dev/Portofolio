@@ -2,7 +2,7 @@
 $title = isset($_POST['title']) ? $_POST['title'] : '';
 $content = isset($_POST['content']) ? $_POST['content'] : '';
 $category = isset($_POST['category']) ? $_POST['category'] : '';
-$short_content = isset($_POST['short-content']) ? $_POST['short-content'] : '';
+$short_content = isset($_POST['short_content']) ? $_POST['short_content'] : '';
 $date = isset($_POST['date']) ? $_POST['date'] : '';
 $imageName = ''; 
 
@@ -10,8 +10,8 @@ if ($title && $content) {
 
     $filename = strtolower(str_replace(' ', '_', $title)) . '.html';
     
-    $saveDir = '../../pages/articles/'; 
-    $imageDir = '../../assets/images/articles/';
+    $saveDir = '../../pages/projects/'; 
+    $imageDir = '../../assets/images/projects/';
     $fullPath = $saveDir . $filename; 
 
 
@@ -22,6 +22,7 @@ if ($title && $content) {
     $articleData = array(
         'title' => $title,
         'category' => $category,
+        'content' => $content,
         'short_content' => $short_content,
         'date' => $date, 
         'filename' => $fullPath 
@@ -41,7 +42,7 @@ if ($title && $content) {
     }
 
 
-    $jsonFile = '../../assets/data/articles.json';
+    $jsonFile = '../../assets/data/projects.json';
     if (file_exists($jsonFile)) {
         $jsonData = json_decode(file_get_contents($jsonFile), true);
     } else {
