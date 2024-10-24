@@ -309,7 +309,7 @@
     <!-- Start Contact Section -->
     <section class="contact">
       <div class="container df gap-50 f-v">
-        <form action="">
+        <form>
           <h2 class="main-title">Let’s work together!</h2>
           <p>
             I design and code beautifully simple things and i love what i do.
@@ -387,7 +387,22 @@
     </footer>
     <!-- End Footer -->
 
+    <!-- Start Form State -->
+    <div class="message">
+      <p></p>
+    </div>
+    <!-- End Form State -->
+
     <script src="scripts/js/home.js"></script>
     <script src="scripts/js/global.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/dist/email.min.js"
+    ></script>
+    <script>
+      (function () {
+        emailjs.init("rUCVLoxdlzemlCnXp");
+      })();
+    </script>
   </body>
 </html>

@@ -703,3 +703,22 @@
 /* End Contact Section */
 
 
+/* Start Form State */
+.message {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  right: -100%;
+  top: 20px;
+  /* transform: translate(-50%,-50%); */
+  background-color: var(--clr-750);
+  color: var(--clr-500);
+  font-size: 30px;
+  padding: 20px;
+  height: 100px;
+  border-radius: 6px;
+  border: 2px solid var(--clr-600);
+  box-shadow: 2px 2px var(--clr-600);
+  z-index: 999;
+}
+/* End Form State */

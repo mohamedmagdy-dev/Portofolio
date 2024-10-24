@@ -127,3 +127,23 @@ function filterProject(filterClass) {
     }
   });
 }
+
+// Init Contact Form
+
+document
+  .querySelector(".contact form")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+    let message = document.querySelector(".message");
+    emailjs.sendForm("service_k5c7r89", "template_4asvi4o", this).then(
+      function () {
+        document.querySelector(".message p").innerText =
+          "Message sent successfully!";
+        message.style.cssText = "right: 20px";
+      },
+      function () {
+        document.querySelector(".message p").innerText = "SomeThing Wrong";
+        message.style.cssText = "right: 20px";
+      }
+    );
+  });
