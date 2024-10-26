@@ -36,9 +36,8 @@ articles.then((articlesData) => {
   articlesCategoryCount[4].innerHTML = `(${responsiveArticleCount})`;
 });
 
-// Add Articles From Json File Into Articles Pages 
+// Add Articles From Json File Into Articles Pages
 if (
-  document.title == "Blogs" ||
   document.title == "Html" ||
   document.title == "Css" ||
   document.title == "javaScript" ||
@@ -48,8 +47,18 @@ if (
   articles.then((articles) => {
     articles.forEach((article) => {
       if (article.category == document.title) {
-        articleStructure(article)
+        console.log(articles);
+        articleStructure(article);
       }
+    });
+  });
+}
+
+if (document.title == "Blogs") {
+  articles.then((articles) => {
+    articles.forEach((article) => {
+      console.log(articles);
+      articleStructure(article);
     });
   });
 }
@@ -104,67 +113,65 @@ articles.then((articlesData) => {
 
 function articleStructure(article) {
   let articleElement = document.createElement("div");
-      articleElement.classList.add("blog");
+  articleElement.classList.add("blog");
 
-      let articleCategory = document.createElement("span");
-      articleCategory.classList.add("blog-category");
-      let articleCategoryContent = document.createTextNode(article.category);
-      articleCategory.appendChild(articleCategoryContent);
+  let articleCategory = document.createElement("span");
+  articleCategory.classList.add("blog-category");
+  let articleCategoryContent = document.createTextNode(article.category);
+  articleCategory.appendChild(articleCategoryContent);
 
-      let articleImgContainer = document.createElement("div");
-      articleImgContainer.classList.add("blog-img");
+  let articleImgContainer = document.createElement("div");
+  articleImgContainer.classList.add("blog-img");
 
-      let articleImg = document.createElement("img");
-      articleImg.src = article.image;
-      articleImg.alt = article.title;
-      articleImg.title = article.title;
-      articleImgContainer.appendChild(articleImg);
+  let articleImg = document.createElement("img");
+  articleImg.src = article.image;
+  articleImg.alt = article.title;
+  articleImg.title = article.title;
+  articleImgContainer.appendChild(articleImg);
 
-      let articleInfo = document.createElement("div");
-      articleInfo.classList.add("blog-info");
+  let articleInfo = document.createElement("div");
+  articleInfo.classList.add("blog-info");
 
-      let articleP = document.createElement("p");
+  let articleP = document.createElement("p");
 
-      let articleAuthor = document.createElement("span");
-      articleAuthor.classList.add("author");
+  let articleAuthor = document.createElement("span");
+  articleAuthor.classList.add("author");
 
-      articleAuthor.innerHTML = `<i class="fa-solid fa-person"></i> By Mohamed Magdy`;
+  articleAuthor.innerHTML = `<i class="fa-solid fa-person"></i> By Mohamed Magdy`;
 
-      articleP.appendChild(articleAuthor);
+  articleP.appendChild(articleAuthor);
 
-      let articleDate = document.createElement("span");
-      articleDate.classList.add("date");
+  let articleDate = document.createElement("span");
+  articleDate.classList.add("date");
 
-      articleDate.innerHTML = `<i class="fa-solid fa-calendar-days"></i> ${article.date}`;
+  articleDate.innerHTML = `<i class="fa-solid fa-calendar-days"></i> ${article.date}`;
 
-      articleP.appendChild(articleDate);
+  articleP.appendChild(articleDate);
 
-      articleInfo.appendChild(articleP);
+  articleInfo.appendChild(articleP);
 
-      let articleTitle = document.createElement("h2");
-      let articleTitleContent = document.createTextNode(article.title);
-      articleTitle.appendChild(articleTitleContent);
+  let articleTitle = document.createElement("h2");
+  let articleTitleContent = document.createTextNode(article.title);
+  articleTitle.appendChild(articleTitleContent);
 
-      articleInfo.appendChild(articleTitle);
+  articleInfo.appendChild(articleTitle);
 
-      let articleShortDis = document.createElement("p");
-      let articleShortDisContent = document.createTextNode(
-        article.short_content
-      );
-      articleShortDis.appendChild(articleShortDisContent);
+  let articleShortDis = document.createElement("p");
+  let articleShortDisContent = document.createTextNode(article.short_content);
+  articleShortDis.appendChild(articleShortDisContent);
 
-      articleInfo.appendChild(articleShortDis);
+  articleInfo.appendChild(articleShortDis);
 
-      let articleLink = document.createElement("a");
-      articleLink.href = article.filename;
-      let articleLinkContent = document.createTextNode("Read More");
-      articleLink.appendChild(articleLinkContent);
+  let articleLink = document.createElement("a");
+  articleLink.href = article.filename;
+  let articleLinkContent = document.createTextNode("Read More");
+  articleLink.appendChild(articleLinkContent);
 
-      articleInfo.appendChild(articleLink);
+  articleInfo.appendChild(articleLink);
 
-      articleElement.appendChild(articleCategory);
-      articleElement.appendChild(articleImgContainer);
-      articleElement.appendChild(articleInfo);
+  articleElement.appendChild(articleCategory);
+  articleElement.appendChild(articleImgContainer);
+  articleElement.appendChild(articleInfo);
 
-      articlesContainer.appendChild(articleElement);
+  articlesContainer.appendChild(articleElement);
 }

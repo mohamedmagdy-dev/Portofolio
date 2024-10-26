@@ -86,6 +86,27 @@ section > p {
   padding-inline: 15px;
 }
 
+/* Start Scroll Btn */
+.scroll-btn {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid var(--clr-700);
+  color: var(--clr-600);
+  cursor: pointer;
+  box-shadow: 0px 0px 6px 1px #8750f763;
+  transition: 0.3s;
+  opacity: 0;
+  pointer-events: none;
+}
+/* End Scroll Btn */
+
 .container {
   padding-inline: 15px;
   margin-inline: auto;

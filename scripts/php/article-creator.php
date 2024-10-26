@@ -17,6 +17,7 @@
         content="Frontend Developer, Mohamed Magdy Elsayed, Web Developer, HTML, CSS, JavaScript, Portfolio, Frontend, محمد مجدي السيد"
         />
       <link rel="stylesheet" href="../../styles/normailze.css" />
+      <link rel="stylesheet" href="../../styles/all.min.css" />
       <link rel="stylesheet" href="../../styles/global.css" />
       <link rel="stylesheet" href="../../styles/forms.css" />
       <title>Create Article Form</title>
@@ -82,7 +83,6 @@
       </div>
     </footer>
     <!-- End Footer -->
-    <script src="../../scripts/js/home.js"></script>
     <script src="../../scripts/js/global.js"></script>
   </body>
 </html>

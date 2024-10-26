@@ -70,6 +70,11 @@ if ($title && $content) {
     <title>' . htmlspecialchars($title) . '</title>
   </head>
   <body>
+    <!-- Start Scroll Button -->
+    <button class="scroll-btn">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <!-- End Scroll Button -->
     <!-- Start Header  -->
     <header>
       <div class="container df f-sb f-v">
